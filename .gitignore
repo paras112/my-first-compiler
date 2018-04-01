@@ -1,0 +1,9 @@
+*.pyc
+*~
+__pycache__
+compiler.sublime-project
+compiler.sublime-workspace
+
+db.sqlite3
+/static
+.DS_Store

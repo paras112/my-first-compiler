@@ -1,0 +1,44 @@
+<html><head><title>Compiler</title>
+<style>
+.menu{
+background:#808080;
+}
+.header {
+width:50%;
+height:40px;
+background:#808080;
+margin-top:100px;
+}
+#browser{
+width:48%;
+height:500px;
+float:right;
+border: 1px solid black;
+}
+</style>
+<script>
+function fun(){
+var code= document.getElementById("content").value;
+document.getElementById("browser").innerHTML= code;
+}
+</script>
+</head>
+<body>
+<div class="menu">
+<form method='POST' action=''>{% csrf_token%}
+<div class="header">
+
+<button onclick="fun()" style="width:100px;height:40px;color:green;margin: 0px 0px 0px 575px;">Run</button>
+</div>
+<input type='submit' value='submit'/>
+
+<textarea name="text" style="height:500px;width:50%;float:left;background:#000000;color:#FFFFFF;" id="content">&lt;!--enter your code here--&gt;
+ </textarea>
+ </form>
+<div id="browser">
+
+</div>
+</div>
+ 
+
+  </body></html>
